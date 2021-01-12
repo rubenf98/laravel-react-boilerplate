@@ -1,11 +1,26 @@
 import React from 'react'
 import { render } from 'react-dom'
+import { createStore, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
+import promise from 'redux-promise-middleware'
 import Routes from "./routes";
-import { BrowserRouter } from "react-router-dom";
+import { Provider } from 'react-redux'
+import reducer from './reducer'
+import { composeWithDevTools } from 'redux-devtools-extension';
+
+const store = createStore(
+    reducer,
+    composeWithDevTools(
+        applyMiddleware(
+            thunk,
+            promise,
+        )
+    )
+)
 
 render(
-    <BrowserRouter>
+    <Provider store={store}>
         <Routes />
-    </BrowserRouter>,
+    </Provider>,
     document.getElementById('index')
 )
