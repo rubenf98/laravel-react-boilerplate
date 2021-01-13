@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f70e2c7e71c8f6d7df068ef5f4e29b62",
+    "content-hash": "6dbad93b2a7b126fd0009414643289d6",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -117,6 +117,83 @@
                 }
             ],
             "time": "2020-08-18T23:57:15+00:00"
+        },
+        {
+            "name": "cerbero/query-filters",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cerbero90/query-filters.git",
+                "reference": "22373792408f0aab3da3dec25e843b7515dd790b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cerbero90/query-filters/zipball/22373792408f0aab3da3dec25e843b7515dd790b",
+                "reference": "22373792408f0aab3da3dec25e843b7515dd790b",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^5.4|^6.0|^7.0|^8.0",
+                "illuminate/database": "^5.4|^6.0|^7.0|^8.0",
+                "illuminate/http": "^5.4|^6.0|^7.0|^8.0",
+                "illuminate/support": "^5.4|^6.0|^7.0|^8.0",
+                "php": "^5.6|^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^3.4|^4.0|^5.0|^6.0",
+                "phpunit/phpunit": "^5.4|^6.0|^7.0|^8.0|^9.0",
+                "squizlabs/php_codesniffer": "^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Cerbero\\QueryFilters\\Providers\\QueryFiltersServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cerbero\\QueryFilters\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrea Marco Sartori",
+                    "email": "andrea.marco.sartori@gmail.com",
+                    "homepage": "https://github.com/cerbero90",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filter Laravel Eloquent models based on query parameters.",
+            "homepage": "https://github.com/cerbero90/query-filters",
+            "keywords": [
+                "cerbero",
+                "eloquent",
+                "filters",
+                "laravel",
+                "query",
+                "query-filters"
+            ],
+            "support": {
+                "issues": "https://github.com/cerbero90/query-filters/issues",
+                "source": "https://github.com/cerbero90/query-filters/tree/1.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/AndreaMarcoSartori",
+                    "type": "custom"
+                }
+            ],
+            "time": "2020-10-15T00:42:21+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
